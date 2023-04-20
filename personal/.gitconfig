@@ -1,0 +1,29 @@
+# Add your preferred git settings here. This will overwrite anything in `core/configs/.gitconfig`.
+[user]
+  name = "Ben Lafferty"
+  email = "ben.lafferty@shopify.com"
+
+[alias]
+  # Append any staged files onto the most recent commit.
+	amend = commit --amend --no-edit
+
+  # View the current working tree status using the short format
+	st = status
+
+  # Switch to a new branch
+  s = switch
+
+  # Commit with message
+  cm = commit -m
+
+  # Force push with lease
+  puf = "!git push -u origin --force-with-lease $(git symbolic-ref --short HEAD)"
+
+  # Add only tracked files (ignore new files)
+  ad = add -u
+
+  # Add all tracked files
+  good = "!git add . && git commit --amend --no-edit && git push origin $(git symbolic-ref --short HEAD) --force-with-lease"
+
+[safe]
+	directory = /Users/ben/dotfiles
