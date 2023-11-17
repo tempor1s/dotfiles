@@ -1,4 +1,4 @@
-Opinionated dotfiles starter template - compatible with MacOS and Spin.
+My opinionated dotfiles. Built off of the Shopify internal dotfiles template.
 
 Uses [oh-my-zsh](https://ohmyz.sh/) with [Antigen](https://github.com/zsh-users/antigen) to manage dependencies and themes.
 Default theme is [Staples](https://github.com/dersam/staples).
