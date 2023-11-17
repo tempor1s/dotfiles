@@ -5,13 +5,4 @@
 [[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 
-# install exa
-brew install exa
-
-# replace ls with exa
-alias l="exa"
-alias ls="exa"
-alias ll="exa -l"
-alias la="exa -la"
-
 eval "$(github-copilot-cli alias -- "$0")"
