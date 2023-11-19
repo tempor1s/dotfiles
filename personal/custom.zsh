@@ -8,3 +8,6 @@ alias l="exa"
 alias ls="exa"
 alias ll="exa -l"
 alias la="exa -la"
+
+# replace cat with bat
+alias cat='bat --paging=never'
