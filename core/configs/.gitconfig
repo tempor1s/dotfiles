@@ -3,6 +3,7 @@
 	# Include user-specific info like git credentials.
 	path = ~/dotfiles/personal/.gitconfig
 	path = ~/.config/git/.gitconfig
+	path = /Users/ben/.config/dev/gitconfig
 
 [alias]
 
@@ -92,3 +93,7 @@
 	# resolve that same conflict in a future rebase, this setting will reuse your previously recorded conflict resolution.
 	enabled = true
 	autoupdate = true
+
+[credential]
+	helper =
+	helper = store --file /opt/dev/var/private/git_credential_store
