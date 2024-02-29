@@ -8,3 +8,6 @@ alias l="exa"
 alias ls="exa"
 alias ll="exa -l"
 alias la="exa -la"
+
+# replace vim with nvim
+alias vim="nvim"
