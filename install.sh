@@ -46,4 +46,7 @@ ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/core/configs/.gitignore_global ~/.gitignore_
 # install again. This will overwrite any existing .zshrc.
 ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/.zshrc ~/.zshrc
 
+# Link in the neovim configs
+ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/configs/nvim ~/.config/nvim/*
+
 source ~/$DOTFILES_DIRECTORY_NAME/personal/install.sh
