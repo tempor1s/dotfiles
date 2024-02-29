@@ -7,4 +7,22 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  -- For finding files (requires ripgrep)
+  use {
+	  'nvim-telescope/telescope.nvim', tag = '0.1.5',
+	  -- or                            , branch = '0.1.x',
+	  requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  -- For nice syntax highlighting
+  use {
+	  'nvim-treesitter/nvim-treesitter',
+	  run = ':TSUpdate'
+  }
+
+  -- Theme!
+  use({
+	  'rose-pine/neovim',
+	  as = 'rose-pine',
+  })
 end)
