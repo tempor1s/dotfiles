@@ -30,11 +30,6 @@ if [[ ! -d $HOME/antigen ]]; then
 	cd -
 fi
 
-if [ $SPIN ]; then
-  # Install Ripgrep for better code searching: `rg <string>` to search. Obeys .gitignore
-  sudo apt-get install -y ripgrep
-fi
-
 # Symlink core configs
 
 # Link in the custom gitconfig.
@@ -45,8 +40,5 @@ ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/core/configs/.gitignore_global ~/.gitignore_
 # updated, the terminal will pick up the new version on reload without having to run
 # install again. This will overwrite any existing .zshrc.
 ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/.zshrc ~/.zshrc
-
-# Link in the neovim configs
-ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/configs/nvim ~/.config/nvim
 
 source ~/$DOTFILES_DIRECTORY_NAME/personal/install.sh

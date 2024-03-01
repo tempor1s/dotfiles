@@ -14,11 +14,5 @@ else
   brew install ripgrep
 fi
 
-# install packer.nvim
-[ ! -d ~/.local/share/nvim/site/pack/packer/start/packer.nvim ] && git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-
-# install rust
-curl https://sh.rustup.rs -sSf | sh -s -- -y
-
-# install tree-sitter-cli
-cargo install tree-sitter-cli
+# Link in the neovim configs
+ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/nvim ~/.config/nvim
