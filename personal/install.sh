@@ -7,11 +7,13 @@ if [ $SPIN ]; then
   sudo apt-get install -y exa
   sudo apt-get install -y neovim
   sudo apt-get install -y ripgrep
+  sudo apt-get install -y tmux
 else
   brew install exa
   brew install bat
   brew install neovim
   brew install ripgrep
+  brew install tmux
 fi
 
 # Link in the neovim configs
