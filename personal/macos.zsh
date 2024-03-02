@@ -14,5 +14,3 @@ fi
 
 # replace cat with bat
 alias cat='bat --paging=never'
-
-eval "$(github-copilot-cli alias -- "$0")"
