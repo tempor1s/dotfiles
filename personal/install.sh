@@ -16,9 +16,12 @@ else
   brew install tmux
 fi
 
-# Link in the neovim configs
+# link in neovim configs
 ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/nvim ~/.config/nvim
 
-# Link in the tmux configs
+# link in tmux configs
 ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/tmux/.tmux.conf ~/.tmux.conf
 ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/tmux/.tmux.theme ~/.tmux.theme
+
+# link in alacritty configs
+ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/alacritty.toml ~/.alacritty.toml
