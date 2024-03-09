@@ -11,3 +11,6 @@ alias la="exa -la"
 
 # replace vim with nvim
 alias vim="nvim"
+
+# spin shortcuts
+alias sus="spin up sidekick:with-core"
