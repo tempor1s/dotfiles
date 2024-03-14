@@ -14,3 +14,6 @@ alias vim="nvim"
 
 # spin shortcuts
 alias sus="spin up sidekick:with-core"
+alias dt="dev test"
+alias dr="dev refresh"
+alias gdr="git pull && dev refresh"
