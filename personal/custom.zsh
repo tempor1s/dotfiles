@@ -13,7 +13,7 @@ alias la="exa -la"
 alias vim="nvim"
 
 # spin shortcuts
-alias sus="spin up sidekick:with-core"
+alias sus="spin up sidekick:web"
 alias dt="dev test"
 alias dr="dev refresh"
 alias gdr="git pull && dev refresh"
