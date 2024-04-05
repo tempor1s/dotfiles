@@ -9,7 +9,7 @@ if [ $SPIN ]; then
   sudo apt-get install -y ripgrep
   sudo apt-get install -y tmux
 else
-  brew install exa
+  brew install eza
   brew install bat
   brew install neovim
   brew install ripgrep

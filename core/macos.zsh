@@ -8,8 +8,8 @@ case $ZSH_HOST_OS in
 
 	# Assumes that coreutils and other GNU tools have replaced OSX'
 	export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
-	export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-	export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
+	export PATH="$(/opt/homebrew/bin/brew --prefix coreutils)/libexec/gnubin:$PATH"
+	export MANPATH="$(/opt/homebrew/bin/brew --prefix coreutils)/libexec/gnuman:$MANPATH"
 
 	# Aliases
 	alias stfu="osascript -e 'set volume output muted true'"
