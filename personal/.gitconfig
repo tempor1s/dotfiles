@@ -18,3 +18,6 @@
 
   # ammend to latest branch and force push with lease
   good = "!git add . && git commit --amend --no-edit && git push origin $(git symbolic-ref --short HEAD) --force-with-lease"
+
+  # pull latest from main and rebase
+  fomo = "!git fetch origin main && git rebase origin/main"
