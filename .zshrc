@@ -62,3 +62,7 @@ source ~/extra.zsh
 [[ -f /opt/dev/sh/chruby/chruby.sh ]] && { type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; } }
 
 [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
+
+# cloudplatform: add Shopify clusters to your local kubernetes config
+export KUBECONFIG=${KUBECONFIG:+$KUBECONFIG:}/Users/ben/.kube/config:/Users/ben/.kube/config.shopify.cloudplatform
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
