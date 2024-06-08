@@ -3,3 +3,4 @@
 -- Add any additional options here
 
 vim.g.autoformat = false
+vim.g.neotree_auto_open = 0
