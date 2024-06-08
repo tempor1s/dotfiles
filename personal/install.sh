@@ -18,16 +18,20 @@ if [ $SPIN ]; then
   sudo apt-get install -y neovim
   sudo apt-get install -y ripgrep
   sudo apt-get install -y tmux
+  sudo apt-get install -y zellij
 else
   brew install eza
   brew install bat
   brew install neovim
   brew install ripgrep
-  brew install tmux
+  brew install zellij
 fi
 
 # link in neovim configs
 ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/nvim ~/.config/nvim
+
+# link in the zellij config
+ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/zellij ~/.config/zellij
 
 # link in tmux configs
 ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/tmux/.tmux.conf ~/.tmux.conf
