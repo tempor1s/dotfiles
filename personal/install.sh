@@ -11,6 +11,11 @@ install_eza_in_spin() {
 	sudo apt install -y eza
 }
 
+install_rust() {
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+}
+install_rust
+
 # install deps!
 if [ $SPIN ]; then
 	sudo apt-get install -y bat
@@ -18,8 +23,9 @@ if [ $SPIN ]; then
 	sudo apt-get install -y ripgrep
 	sudo apt-get install -y tmux
 	sudo apt-get install -y zellij
-	sudo apt-get install -y fd
-  sudo apt-get install -y lazygit
+	sudo apt-get install -y fd-find
+  # sudo apt-get install -y lazygit
+	cargo install --locked zellij
   install_eza_in_spin
 else
 	brew install eza
