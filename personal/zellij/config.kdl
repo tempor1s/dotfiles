@@ -1,1 +1,3 @@
 theme "tokyo-night-storm"
+copy_on_select false
+default_layout "compact"
