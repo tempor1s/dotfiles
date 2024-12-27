@@ -38,9 +38,11 @@ else
 fi
 
 # link in neovim configs
+mkdir -p ~/.config/nvim
 ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/nvim ~/.config/nvim
 
 # link in the zellij config
+mkdir -p ~/.config/zellij
 ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/zellij ~/.config/zellij
 
 # link in tmux configs
@@ -51,4 +53,5 @@ ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/tmux/.tmux.theme ~/.tmux.theme
 ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/alacritty.toml ~/.alacritty.toml
 
 # link in ghostty configs
+mkdir -p ~/.config/ghostty
 ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/ghostty/config ~/.config/ghostty/config
