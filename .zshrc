@@ -69,5 +69,3 @@ source $HOME/.cargo/env
 # cloudplatform: add Shopify clusters to your local kubernetes config
 export KUBECONFIG=${KUBECONFIG:+$KUBECONFIG:}/Users/ben/.kube/config:/Users/ben/.kube/config.shopify.cloudplatform
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-
-. "$HOME/.local/bin/env"
