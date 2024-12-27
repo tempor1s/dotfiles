@@ -49,3 +49,6 @@ ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/tmux/.tmux.theme ~/.tmux.theme
 
 # link in alacritty configs
 ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/alacritty.toml ~/.alacritty.toml
+
+# link in ghostty configs
+ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/ghostty/config ~/.config/ghostty/config
