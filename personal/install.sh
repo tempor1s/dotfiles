@@ -14,7 +14,6 @@ else
 	brew install bat
 	brew install ripgrep
 	brew install fd
-	brew install ghostty
 	brew install zellij
 	brew install pure
 fi
