@@ -19,31 +19,19 @@ install_rust
 # install deps!
 if [ $SPIN ]; then
 	sudo apt-get install -y bat
-	sudo apt-get install -y neovim
 	sudo apt-get install -y ripgrep
 	sudo apt-get install -y tmux
 	sudo apt-get install -y zellij
 	sudo apt-get install -y fd-find
   # sudo apt-get install -y lazygit
-	cargo install --locked zellij
   install_eza_in_spin
 else
 	brew install eza
 	brew install bat
-	brew install neovim
 	brew install ripgrep
-	brew install zellij
 	brew install fd
   brew install jesseduffield/lazygit/lazygit
 fi
-
-# link in neovim configs
-mkdir -p ~/.config/nvim
-ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/nvim ~/.config/nvim
-
-# link in the zellij config
-mkdir -p ~/.config/zellij
-ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/zellij ~/.config/zellij
 
 # link in tmux configs
 ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/tmux/.tmux.conf ~/.tmux.conf
