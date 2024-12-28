@@ -3,13 +3,6 @@
 # Put anything here that you want to exist on all your environment, and to have the highest priority
 # over any other customization.
 
-if [[ -n "${SPIN}" ]]; then
-  alias l="eza"
-  alias ls="eza"
-  alias ll="eza -l"
-  alias la="eza -la"
-fi
-
 alias vim="nvim"
 alias vi="nvim"
 
