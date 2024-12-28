@@ -6,3 +6,5 @@ font-size = 14
 confirm-close-surface = false
 macos-titlebar-style = tabs
 window-save-state = always
+cursor-style = block
+shell-integration-features = no-cursor
