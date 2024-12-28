@@ -1,7 +1,7 @@
 theme = tokyonight
-font-family = "TX-02-Regular"
+font-family = "TX-02"
 font-family = "Berkeley Mono"
-window-title-font-family = "TX-02-Regular"
+window-title-font-family = "TX-02"
 font-size = 14
 confirm-close-surface = false
 macos-titlebar-style = tabs

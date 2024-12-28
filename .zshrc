@@ -48,10 +48,6 @@ if [ -e $DF_USER/dircolors ]; then
 fi
 
 source $DF_CORE/filter_history.zsh
-
-# Load personalized configs for Spin environments
-source $DF_USER/spin.zsh
-
 source $DF_USER/custom.zsh
 
 # Load changes specific to this local environment.
