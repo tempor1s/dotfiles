@@ -4,6 +4,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 # install deps!
 if [ $SPIN ]; then
 	sudo apt-get install -y ripgrep
+	npm install --global pure-prompt
+	tic -x ~/$DOTFILES_DIRECTORY_NAME/personal/ghostty_terminfo.txt
 else
 	brew install bat
 	brew install ripgrep
