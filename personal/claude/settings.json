@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [],
+    "deny": []
+  },
+  "env": {
+    "MAX_THINKING_TOKENS": "32000"
+  },
+  "includeCoAuthoredBy": false,
+  "model": "opus"
+}

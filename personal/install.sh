@@ -21,3 +21,7 @@ ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/alacritty.toml ~/.alacritty.toml
 # link in ghostty configs
 mkdir -p ~/.config/ghostty
 ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/ghostty/config ~/.config/ghostty/config
+
+# link in claude configs
+ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/claude/settings.json ~/.claude/settings.json
+ln -vsfn ~/$DOTFILES_DIRECTORY_NAME/personal/claude/CLAUDE.md ~/.claude/CLAUDE.md
