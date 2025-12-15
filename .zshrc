@@ -59,6 +59,4 @@ source ~/extra.zsh
 
 [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
 
-# cloudplatform: add Shopify clusters to your local kubernetes config
-export KUBECONFIG=${KUBECONFIG:+$KUBECONFIG:}/Users/ben/.kube/config:/Users/ben/.kube/config.shopify.cloudplatform
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
